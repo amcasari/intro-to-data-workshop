@@ -19,3 +19,7 @@ Additional 'R' packages can be downloaded using CRAN in R:
 ```
 > install.packages("package_name")
 ```
+
+## Excellent References
+
+- [Cheatsheets](http://www.rstudio.com/resources/cheatsheets/) from RStudio
