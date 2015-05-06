@@ -23,3 +23,8 @@ Additional 'R' packages can be downloaded using CRAN in R:
 ## Excellent References
 
 - [Cheatsheets](http://www.rstudio.com/resources/cheatsheets/) from RStudio
+- 
+
+## Wondering if you should attend?
+
+The answer is "Yes, please." Here's to breaking through the [talent myth](https://www.youtube.com/watch?v=hIJdFxYlEKE) and learning from each other.
