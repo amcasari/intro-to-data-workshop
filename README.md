@@ -22,9 +22,31 @@ Additional 'R' packages can be downloaded using CRAN in R:
 > install.packages("package_name")
 ```
 
+Thus, to install packages we will be using in this workshop:
+
+```
+# for creating RMDs
+install.packages("knitr")
+install.packages("yaml")
+install.packages("htmltools")
+install.packages("caTools")
+install.packages("bitops")
+install.packages("rmarkdown")
+
+# for data cleaning and shaping
+install.packages("tidy")
+install.packages("plyr")
+install.packages("dplyr")
+
+# for data exploration
+install.packages("ggplot2")
+```
+
+
 ## Excellent References
 
 - [Cheatsheets](http://www.rstudio.com/resources/cheatsheets/) from RStudio
+- [Course Notes](http://people.stat.sfu.ca/~cschwarz/CourseNotes/) explaining many useful stats work into R 
 
 ## Wondering if you should attend?
 
