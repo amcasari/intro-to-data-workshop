@@ -86,16 +86,48 @@ acc.na <- accident[is.na(accident)]
 
 # let's do some visual exploration
 require(ggplot2)
+
 # intro to pairplot
+require(car) 
+
+data(iris)
+spm(~iris$Sepal.Length + iris$Sepal.Width + iris$Petal.Length
+    + iris$Petal.Width | iris$Species)
+
+# does this work so well with our data?
+spm(~accident$MONTH + accident$DAY + accident$YEAR + accident$STATE + accident$COUNTY 
+    + accident$WEATHER | accident$FATALS)
+# Q: What is the difference in the data sets that might make iris pairplot easier to interpret?
+# Q: How can we change our view into the accident data that might help?
+
 # intro to histograms
+ggplot(accident, aes(x = YEAR)) + geom_histogram(binwidth = 1)
+
+# can save as a plot object to create a grid of histograms
+p1 <- ggplot(accident, aes(x = YEAR)) + geom_histogram(binwidth = 1)
+p2 <- ggplot(accident, aes(x = MONTH)) + geom_histogram(binwidth = 1)
+p3 <- ggplot(accident, aes(x = DAY)) + geom_histogram(binwidth = 1)
+p4 <- ggplot(accident, aes(x = STATE)) + geom_histogram(binwidth = 1)
+p5 <- ggplot(accident, aes(x = COUNTY)) + geom_histogram(binwidth = 1)
+p6 <- ggplot(accident, aes(x = FATALS)) + geom_histogram(binwidth = 1)
+p7 <- ggplot(accident, aes(x = DRUNK_DR)) + geom_histogram(binwidth = 1)
+
+require(gridExtra)
+acc_hist <- grid.arrange(p1, p2, p3, p4, p5, p6, p7)
+
 # intro to scatter plot
-# plots for accident
-# Q: can we do a pair plot? would this be useful?
+ggplot(accident, aes(x = FATALS, y = DRUNK_DR)) + geom_point()
+# Q: Discuss how the plot reflects the data type...
+
 # save to the figs dir
+# can do this manually -> show this now!
+pdf("accident_histogram_grid.pdf")
+acc_hist <- grid.arrange(p1, p2, p3, p4, p5, p6, p7)
+dev.off()
 
 #### 5. Save your work
 # as a csv
-write.csv(trans_acc, file = "output/trans_acc.csv", row.names = FALSE)
+write.csv(accident, file = "output/trans_acc.csv", row.names = FALSE)
 
 # as a RDS (r data serialization)
-saveRDS(trans_acc, "output/trans_acc.rds")
+saveRDS(accident, "output/trans_acc.rds")
