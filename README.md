@@ -6,7 +6,7 @@ Instructor: *am casari*
   
 TAs:
  - [bridgetlally](https://www.linkedin.com/in/bridgetlally)
- - [Deb Siegal](https://www.linkedin.com/in/deborahlynnsiegel)
+ - [Deb Siegel](https://www.linkedin.com/in/deborahlynnsiegel)
 
 This repo contains all the information needed for [WWC Seattle's workshop](http://www.meetup.com/Women-Who-Code-Seattle/events/220649589/).
 
