@@ -46,8 +46,13 @@ install.packages("ggplot2")
 ## Excellent References
 
 - [Cheatsheets](http://www.rstudio.com/resources/cheatsheets/) from RStudio
-- [Course Notes](http://people.stat.sfu.ca/~cschwarz/CourseNotes/) explaining many useful stats work into R 
+- [Course Notes](http://people.stat.sfu.ca/~cschwarz/CourseNotes/) explaining many useful stats work into R
+- [Advanced R](http://www.amazon.com/Advanced-Chapman-Hall-CRC-Series/dp/1466586966) is Hadley Wickham's book explaining the workings of R as a programming language. Also available [as bits here](http://adv-r.had.co.nz/).
 
 ## Wondering if you should attend?
 
 The answer is "Yes, please." Here's to breaking through the [talent myth](https://www.youtube.com/watch?v=hIJdFxYlEKE) and learning from each other.
+
+## And in case you missed it...
+- Slides are available [here](http://bit.ly/1BpWJdH).
+- Workshop [survey](http://goo.gl/forms/JPxrFWZbJo) for some basic data collection and [results](http://bit.ly/1Eyxrdo) for working with in R.
